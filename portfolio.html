@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            background-color: #000;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+     
+        .content-section {
+            padding: 100px 40px;
+            text-align: center;
+            background: #000;
+        }
+
+        .content-section h1 {
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .content-section h2 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            color: #aaa;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #ccc;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 2px;
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.95);
+                flex-direction: column;
+                padding: 80px 30px;
+                transition: right 0.3s;
+            }
+
+            nav.active {
+                right: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .content-section h1 {
+                font-size: 32px;
+            }
+
+            .content-section h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><strong>Jaelon Stimak-Eckman </strong></a>
+        <nav id="nav">
+            <a href="#portfolio.html">Portfolio</a>
+            <a href="#about.html">About</a>
+            <a href="#contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">
+           
+        </div>
+        <div class="content-section">
+        <h1> Portfolio  </h1>
+        <h2>All done by me</h2>
+
+         <video src="web 2.mov" alt="Mountain landscape" width="1000px">
+    </div>
+
+    </body>
