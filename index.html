@@ -1,282 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home
-    </title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <!DOCTYPE html>
+    <html lang="en">
 
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            color: #fff;
-            overflow-x: hidden;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home
+        </title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-        }
+            body {
+                font-family: 'Helvetica Neue', Arial, sans-serif;
+                color: #fff;
+                overflow-x: hidden;
+            }
 
-        .logo {
-            font-size: 50px;
-            font-weight: 300;
-            letter-spacing: 2px;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        nav {
-            display: flex;
-            gap: 30px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
-            letter-spacing: 1px;
-            transition: opacity 0.3s;
-        }
-
-        nav a:hover {
-            opacity: 0.7;
-        }
-
-        .slider-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
-        .slide.active {
-            opacity: 1;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .slider-dots {
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 12px;
-            z-index: 100;
-        }
-
-        .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .dot.active {
-            background: rgba(255, 255, 255, 1);
-        }
-
-        .content-section {
-            padding: 100px 40px;
-            text-align: center;
-            background: #000;
-        }
-
-        .content-section h1 {
-            font-size: 48px;
-            font-weight: 300;
-            margin-bottom: 20px;
-            letter-spacing: 3px;
-        }
-
-        .content-section h2 {
-            font-size: 18px;
-            font-weight: 300;
-            margin-bottom: 30px;
-            letter-spacing: 2px;
-            color: #aaa;
-        }
-
-        .content-section p {
-            font-size: 16px;
-            line-height: 1.8;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #ccc;
-        }
-
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            transition: 0.3s;
-        }
-
-        @media (max-width: 768px) {
             header {
-                padding: 15px 20px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1000;
+                padding: 20px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+
+            .logo {
+                font-size: 50px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: #fff;
             }
 
             nav {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 70%;
-                height: 100vh;
-                background: rgba(0, 0, 0, 0.95);
-                flex-direction: column;
-                padding: 80px 30px;
-                transition: right 0.3s;
-            }
-
-            nav.active {
-                right: 0;
-            }
-
-            .menu-toggle {
                 display: flex;
+                gap: 30px;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 1px;
+                transition: opacity 0.3s;
+            }
+
+            nav a:hover {
+                opacity: 0.7;
+            }
+
+            .slider-container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .slide {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+            .slide.active {
+                opacity: 1;
+            }
+
+            .slide img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .slider-dots {
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap: 12px;
+                z-index: 100;
+            }
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.5);
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+            .dot.active {
+                background: rgba(255, 255, 255, 1);
+            }
+
+            .content-section {
+                padding: 100px 40px;
+                text-align: center;
+                background: #000;
             }
 
             .content-section h1 {
-                font-size: 32px;
+                font-size: 48px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
             }
 
             .content-section h2 {
-                font-size: 16px;
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 30px;
+                letter-spacing: 2px;
+                color: #aaa;
             }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <a href="/index.html" class="logo"><strong>Jaelon Stimak-Eckman </strong></a>
-        <nav id="nav">
-            <a href="/portfolio.html">Portfolio</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+
+            .content-section p {
+                font-size: 16px;
+                line-height: 1.8;
+                max-width: 700px;
+                margin: 0 auto;
+                color: #ccc;
+            }
+
+            .menu-toggle {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+            }
+
+            .menu-toggle span {
+                width: 25px;
+                height: 2px;
+                background: #fff;
+                transition: 0.3s;
+            }
+
+            @media (max-width: 768px) {
+                header {
+                    padding: 15px 20px;
+                }
+
+                nav {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    width: 70%;
+                    height: 100vh;
+                    background: rgba(0, 0, 0, 0.95);
+                    flex-direction: column;
+                    padding: 80px 30px;
+                    transition: right 0.3s;
+                }
+
+                nav.active {
+                    right: 0;
+                }
+
+                .menu-toggle {
+                    display: flex;
+                }
+
+                .content-section h1 {
+                    font-size: 32px;
+                }
+
+                .content-section h2 {
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="/index.html" class="logo"><strong>Jaelon Stimak-Eckman </strong></a>
+            <nav id="nav">
+                <a href="/portfolio.html">Portfolio</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+
+        <!-- Fullscreen Image Slider -->
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="1.JPG" alt="Mountain landscape">
+            </div>
+            <div class="slide">
+                <img src="bts1.jpg" alt="Northern lights">
+            </div>
+            <div class="slide">
+                <img src="3.JPG" alt="Glacial landscape">
+            </div>
+            <div class="slide">
+                <img src="2.JPG" alt="Ocean waves">
+            </div>
+            <div class="slide">
+                <img src="bts2.JPG" alt="Mountain peak">
+
+
+
+            </div>
+
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
         </div>
-    </header>
 
-    <!-- Fullscreen Image Slider -->
-    <div class="slider-container">
-        <div class="slide active">
-            <img src="1.JPG" alt="Mountain landscape">
-        </div>
-        <div class="slide">
-            <img src="4.JPG" alt="Northern lights">
-        </div>
-        <div class="slide">
-            <img src="3.JPG" alt="Glacial landscape">
-        </div>
-        <div class="slide">
-            <img src="2.JPG" alt="Ocean waves">
-        </div>
-        <div class="slide">
-            <img src="6.JPG" alt="Mountain peak">
-        
-
-
+        <!-- Content Section -->
+        <div class="content-section">
+            <h1>Jaelon Stimak-Eckman</h1>
+            <h2>(jzillafilmz) Director and visual storyteller.</h2>
+            <p>Specializing in effects and cinematography, capturing the world around us through the lens of raw
+                creativity.</p>
         </div>
 
-        <!-- Slider Dots -->
-        <div class="slider-dots">
-            <span class="dot active" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-    </div>
+        <script>
+            // Slider functionality
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
 
-    <!-- Content Section -->
-    <div class="content-section">
-        <h1>Jaelon Stimak-Eckman</h1>
-        <h2>(jzillafilmz) Director and visual storyteller.</h2>
-        <p>Specializing in effects and cinema capturing the world around us through the lens of raw creativity.</p>
-    </div>
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
 
-    <script>
-        // Slider functionality
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
+                if (n >= slides.length) slideIndex = 0;
+                if (n < 0) slideIndex = slides.length - 1;
 
-        function showSlide(n) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            if (n >= slides.length) slideIndex = 0;
-            if (n < 0) slideIndex = slides.length - 1;
-            
-            slides[slideIndex].classList.add('active');
-            dots[slideIndex].classList.add('active');
-        }
+                slides[slideIndex].classList.add('active');
+                dots[slideIndex].classList.add('active');
+            }
 
-        function currentSlide(n) {
-            slideIndex = n;
-            showSlide(slideIndex);
-        }
+            function currentSlide(n) {
+                slideIndex = n;
+                showSlide(slideIndex);
+            }
 
-        // Auto-advance slides
-        setInterval(() => {
-            slideIndex++;
-            showSlide(slideIndex);
-        }, 5000);
+            // Auto-advance slides
+            setInterval(() => {
+                slideIndex++;
+                showSlide(slideIndex);
+            }, 5000);
 
-        // Mobile menu toggle
-        function toggleMenu() {
-            document.getElementById('nav').classList.toggle('active');
-        }
-    </script>
+            // Mobile menu toggle
+            function toggleMenu() {
+                document.getElementById('nav').classList.toggle('active');
+            }
+        </script>
+    </body>
+
+    </html>
 </body>
-</html>
-</body>
+
 </html>

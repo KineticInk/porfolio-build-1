@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +15,7 @@
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             color: #fff;
-            overflow-x: hidden;
+
             background-color: #000;
         }
 
@@ -28,7 +29,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
         }
 
         .logo {
@@ -56,11 +57,11 @@
             opacity: 0.7;
         }
 
-     
+
         .content-section {
             padding: 100px 40px;
             text-align: center;
-            background: #000;
+            background: #ffffff;
         }
 
         .content-section h1 {
@@ -68,6 +69,7 @@
             font-weight: 300;
             margin-bottom: 20px;
             letter-spacing: 3px;
+            color: #000;
         }
 
         .content-section h2 {
@@ -75,7 +77,7 @@
             font-weight: 300;
             margin-bottom: 30px;
             letter-spacing: 2px;
-            color: #aaa;
+            color: #000000;
         }
 
         .content-section p {
@@ -84,6 +86,15 @@
             max-width: 700px;
             margin: 0 auto;
             color: #ccc;
+        }
+
+        .video {
+            align-content: center;
+            padding-bottom: 100px;
+        }
+
+        .flick {
+            align-content: center;
         }
 
         .menu-toggle {
@@ -132,12 +143,18 @@
             .content-section h2 {
                 font-size: 16px;
             }
+
+            div {
+                width: 300px;
+                height: 150px;
+            }
         }
     </style>
 </head>
+
 <body>
+
     <header>
-        <header>
         <a href="/index.html" class="logo"><strong>Jaelon Stimak-Eckman </strong></a>
         <nav id="nav">
             <a href="/portfolio.html">Portfolio</a>
@@ -152,17 +169,25 @@
     </header>
 
     <div class="menu-toggle" onclick="toggleMenu()">
-           
-        </div>
-        <div class="content-section">
-        <h1> Portfolio  </h1>
+
+    </div>
+    <div class="content-section">
+        <h1> Portfolio </h1>
         <h2>All done by me</h2>
-        <video width="1080" height="1920" controls poster="Untitled-2.png">
+        <video class="video" width="100%" height="100%" controls poster="Untitled-2.png">
             <source src="showreel.mp4" type="video/mp4">
 
         </video>
+        <h1>Photos</h1>
+        <img class="flick" src="bbshowercollage.JPG" alt="bbshower" width="25%" height="25%">
+        <img class="flick" src="bbshowerHands.JPG" alt="bbshower" width="25%" height="25%">
+        <img class="flick" src="" alt="car" width="25%" height="25%">
+        <img class="flick" src="smokeforest.JPG" alt="forest" width="100%" height="100%">
+        <img class="flick" src="forestpain.JPG" alt="car" width="50%" height="25%">
 
-         <video src="web 2.mov" alt="Mountain landscape" width="1000px">
+
+
+        <video src="web 2.mov" alt="Mountain landscape" width="1000px">
     </div>
 
-    </body>
+</body>
